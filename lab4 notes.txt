@@ -1,0 +1,9 @@
+select Fname + ' ' + Lname as full_name, P.Pname 
+	from Employee E, Works_for W, Project P, Departments D
+	where e.Dno = P.Dnum
+	And e.SSN = w.ESSn
+	And p.Pnumber = w.Pno
+Order by D.Dnum , full_name
+
+
+Q7 alternative solution
